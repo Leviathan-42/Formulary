@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary - Math Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>=� Formulary</h1>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="module-section">
+                    <h3>Modules</h3>
+                    <ul class="module-list">
+                        <li class="module-item active" data-module="module2">
+                            <span class="module-icon">📚</span>
+                            <span>Module 2</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation Tabs -->
+            <div class="tab-bar">
+                <button class="tab active" data-tab="notes">Notes</button>
+                <button class="tab" data-tab="practice">Practice</button>
+                <button class="tab" data-tab="equations">Equations</button>
+                <button class="tab" data-tab="docs">Documents</button>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Notes Tab -->
+                <div class="tab-content active" id="notes">
+                    <div class="notes-container">
+                        <h2>Module 2 Notes</h2>
+
+                        <!-- Point-Slope Form Section -->
+                        <div class="note-section">
+                            <h3 class="section-title">Point-Slope Form</h3>
+                            <div class="note-content">
+                                <h4>What is Point-Slope Form?</h4>
+                                <p>
+                                    Point-slope form is one of the three main forms for writing linear equations. It's especially useful
+                                    when you know a point on the line and the slope of the line.
+                                </p>
+                                <p class="equation">
+                                    $$y - y_1 = m(x - x_1)$$
+                                </p>
+                                <p>
+                                    Where:
+                                </p>
+                                <ul>
+                                    <li>\((x_1, y_1)\) is any point on the line</li>
+                                    <li>\(m\) is the slope of the line</li>
+                                    <li>\((x, y)\) represents any other point on the line</li>
+                                </ul>
+
+                                <h4>When to Use Point-Slope Form</h4>
+                                <p>Use point-slope form when you're given:</p>
+                                <ul>
+                                    <li>One point on the line AND the slope</li>
+                                    <li>Two points on the line (calculate slope first, then use one point)</li>
+                                    <li>A graph where you can identify a point and count the slope</li>
+                                </ul>
+
+                                <h4>Understanding the Slope</h4>
+                                <p>The slope \(m\) represents the rate of change (steepness) of the line:</p>
+                                <p class="equation">
+                                    $$m = \frac{\text{rise}}{\text{run}} = \frac{y_2 - y_1}{x_2 - x_1}$$
+                                </p>
+                                <ul>
+                                    <li><strong>Positive slope:</strong> Line rises from left to right (uphill)</li>
+                                    <li><strong>Negative slope:</strong> Line falls from left to right (downhill)</li>
+                                    <li><strong>Zero slope:</strong> Horizontal line (\(y = c\))</li>
+                                    <li><strong>Undefined slope:</strong> Vertical line (\(x = c\))</li>
+                                </ul>
+
+                                <h4>Step-by-Step: Writing Equations</h4>
+                                <p><strong>Example 1:</strong> Write the equation with slope \(m = 3\) through point \((2, 5)\)</p>
+                                <p class="equation">
+                                    $$\text{Step 1: Identify values} \quad m = 3, \; x_1 = 2, \; y_1 = 5$$
+                                    $$\text{Step 2: Substitute into formula} \quad y - 5 = 3(x - 2)$$
+                                    $$\text{Step 3: (Optional) Convert to slope-intercept}$$
+                                    $$y - 5 = 3x - 6$$
+                                    $$y = 3x - 1$$
+                                </p>
+
+                                <p><strong>Example 2:</strong> Find equation through points \((1, 4)\) and \((3, 10)\)</p>
+                                <p class="equation">
+                                    $$\text{Step 1: Find slope} \quad m = \frac{10 - 4}{3 - 1} = \frac{6}{2} = 3$$
+                                    $$\text{Step 2: Use either point (we'll use } (1, 4))$$
+                                    $$y - 4 = 3(x - 1)$$
+                                    $$\text{Or using } (3, 10): \quad y - 10 = 3(x - 3)$$
+                                </p>
+                                <p><em>Note: Both equations represent the same line!</em></p>
+
+                                <h4>Converting Between Forms</h4>
+                                <p><strong>Point-Slope to Slope-Intercept:</strong> \(y = mx + b\)</p>
+                                <ul>
+                                    <li>Distribute the slope on the right side</li>
+                                    <li>Add \(y_1\) to both sides to isolate \(y\)</li>
+                                </ul>
+                                <p class="equation">
+                                    $$y - 3 = 2(x - 4)$$
+                                    $$y - 3 = 2x - 8$$
+                                    $$y = 2x - 5$$
+                                </p>
+
+                                <h4>Common Mistakes to Avoid</h4>
+                                <ul>
+                                    <li>❌ Forgetting the negative sign: It's \(y - y_1\), not \(y + y_1\)</li>
+                                    <li>❌ Mixing up \(x\) and \(y\) coordinates when substituting</li>
+                                    <li>❌ Incorrectly calculating slope (remember: \(\frac{\Delta y}{\Delta x}\))</li>
+                                    <li>❌ Distributing incorrectly: \(3(x - 2) = 3x - 6\), not \(3x - 2\)</li>
+                                </ul>
+
+                                <h4>Practice Problems</h4>
+                                <p>Try these on your own:</p>
+                                <ol>
+                                    <li>Write equation with slope \(-2\) through \((3, 7)\)</li>
+                                    <li>Find equation through \((-1, 5)\) and \((2, -4)\)</li>
+                                    <li>Convert \(y - 6 = -\frac{1}{2}(x + 4)\) to slope-intercept form</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Standard Form Section -->
+                        <div class="note-section">
+                            <h3 class="section-title">Standard Form</h3>
+                            <div class="note-content">
+                                <h4>What is Standard Form?</h4>
+                                <p>
+                                    Standard form is another way to write linear equations. It's especially useful for
+                                    quickly finding x and y intercepts and working with systems of equations.
+                                </p>
+                                <p class="equation">
+                                    $$Ax + By = C$$
+                                </p>
+                                <p>
+                                    Where:
+                                </p>
+                                <ul>
+                                    <li>\(A\), \(B\), and \(C\) are <strong>integers</strong> (no fractions or decimals)</li>
+                                    <li>\(A\) should be <strong>positive</strong> (if negative, multiply entire equation by -1)</li>
+                                    <li>\(A\) and \(B\) cannot both be zero</li>
+                                    <li>Greatest Common Factor (GCF) of \(A\), \(B\), and \(C\) should be 1</li>
+                                </ul>
+
+                                <h4>Why Use Standard Form?</h4>
+                                <ul>
+                                    <li><strong>Finding intercepts:</strong> Easy to find where line crosses axes</li>
+                                    <li><strong>Systems of equations:</strong> Simplifies elimination method</li>
+                                    <li><strong>Integer coefficients:</strong> Easier to work with whole numbers</li>
+                                    <li><strong>Real-world problems:</strong> Some applications naturally fit this form</li>
+                                </ul>
+
+                                <h4>Finding Intercepts from Standard Form</h4>
+                                <p>Given equation: \(3x + 4y = 12\)</p>
+
+                                <p><strong>X-intercept</strong> (where line crosses x-axis, so \(y = 0\)):</p>
+                                <p class="equation">
+                                    $$3x + 4(0) = 12$$
+                                    $$3x = 12$$
+                                    $$x = 4$$
+                                    $$\text{X-intercept: } (4, 0)$$
+                                </p>
+
+                                <p><strong>Y-intercept</strong> (where line crosses y-axis, so \(x = 0\)):</p>
+                                <p class="equation">
+                                    $$3(0) + 4y = 12$$
+                                    $$4y = 12$$
+                                    $$y = 3$$
+                                    $$\text{Y-intercept: } (0, 3)$$
+                                </p>
+
+                                <h4>Converting TO Standard Form</h4>
+
+                                <p><strong>From Slope-Intercept Form:</strong> \(y = 2x + 3\)</p>
+                                <p class="equation">
+                                    $$y = 2x + 3$$
+                                    $$-2x + y = 3 \quad \text{(move x term to left)}$$
+                                    $$2x - y = -3 \quad \text{(multiply by -1 to make A positive)}$$
+                                </p>
+
+                                <p><strong>From Point-Slope Form:</strong> \(y - 4 = 3(x - 2)\)</p>
+                                <p class="equation">
+                                    $$y - 4 = 3(x - 2)$$
+                                    $$y - 4 = 3x - 6 \quad \text{(distribute)}$$
+                                    $$y = 3x - 2 \quad \text{(simplify)}$$
+                                    $$-3x + y = -2$$
+                                    $$3x - y = 2 \quad \text{(standard form)}$$
+                                </p>
+
+                                <p><strong>With Fractions:</strong> \(y = \frac{2}{3}x + 4\)</p>
+                                <p class="equation">
+                                    $$y = \frac{2}{3}x + 4$$
+                                    $$3y = 2x + 12 \quad \text{(multiply everything by 3)}$$
+                                    $$-2x + 3y = 12$$
+                                    $$2x - 3y = -12 \quad \text{(standard form)}$$
+                                </p>
+
+                                <h4>Converting FROM Standard Form</h4>
+
+                                <p><strong>To Slope-Intercept Form:</strong> Solve for \(y\)</p>
+                                <p class="equation">
+                                    $$4x + 2y = 8$$
+                                    $$2y = -4x + 8 \quad \text{(isolate y term)}$$
+                                    $$y = -2x + 4 \quad \text{(divide by 2)}$$
+                                </p>
+
+                                <h4>Graphing from Standard Form</h4>
+                                <p><strong>Method 1: Using Intercepts</strong></p>
+                                <ol>
+                                    <li>Find x-intercept (set \(y = 0\))</li>
+                                    <li>Find y-intercept (set \(x = 0\))</li>
+                                    <li>Plot both points and draw line through them</li>
+                                </ol>
+
+                                <p><strong>Method 2: Convert to Slope-Intercept</strong></p>
+                                <ol>
+                                    <li>Solve for \(y\) to get \(y = mx + b\) form</li>
+                                    <li>Plot y-intercept \(b\)</li>
+                                    <li>Use slope \(m\) to find other points</li>
+                                </ol>
+
+                                <h4>Common Mistakes</h4>
+                                <ul>
+                                    <li>❌ Leaving fractions: \(\frac{1}{2}x + y = 3\) → Should multiply by 2: \(x + 2y = 6\)</li>
+                                    <li>❌ Negative \(A\): \(-2x + 3y = 5\) → Should be \(2x - 3y = -5\)</li>
+                                    <li>❌ Not simplifying GCF: \(4x + 6y = 10\) → Should be \(2x + 3y = 5\)</li>
+                                    <li>❌ Sign errors when rearranging terms</li>
+                                </ul>
+
+                                <h4>Special Cases</h4>
+                                <p><strong>Horizontal Lines:</strong> \(y = 5\) becomes \(0x + 1y = 5\) or simply \(y = 5\)</p>
+                                <p><strong>Vertical Lines:</strong> \(x = 3\) becomes \(1x + 0y = 3\) or simply \(x = 3\)</p>
+
+                                <h4>Practice Problems</h4>
+                                <ol>
+                                    <li>Convert \(y = -\frac{3}{4}x + 5\) to standard form</li>
+                                    <li>Find the x and y intercepts of \(5x - 2y = 10\)</li>
+                                    <li>Convert \(2x + 6y = 18\) to simplest standard form</li>
+                                    <li>Convert \(3x - 4y = 12\) to slope-intercept form</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Parallel & Perpendicular Lines Section -->
+                        <div class="note-section">
+                            <h3 class="section-title">Parallel & Perpendicular Lines</h3>
+                            <div class="note-content">
+                                <h4>Understanding Parallel Lines</h4>
+                                <p>
+                                    <strong>Parallel lines</strong> are lines in the same plane that never intersect, no matter how far they extend.
+                                    They maintain the same distance apart at all points.
+                                </p>
+
+                                <p><strong>Key Rule:</strong> Parallel lines have <em>identical slopes</em></p>
+                                <p class="equation">
+                                    $$\text{If } L_1: y = m_1x + b_1 \text{ and } L_2: y = m_2x + b_2$$
+                                    $$\text{Then } L_1 \parallel L_2 \text{ if and only if } m_1 = m_2 \text{ and } b_1 \neq b_2$$
+                                </p>
+
+                                <p><strong>Example 1:</strong> Verify if these lines are parallel</p>
+                                <ul>
+                                    <li>Line 1: \(y = 3x + 7\) → slope = 3</li>
+                                    <li>Line 2: \(y = 3x - 2\) → slope = 3</li>
+                                    <li>✅ Same slope, different y-intercepts → <strong>Parallel!</strong></li>
+                                </ul>
+
+                                <p><strong>Example 2:</strong> Write equation parallel to \(y = -2x + 5\) through point \((3, 4)\)</p>
+                                <p class="equation">
+                                    $$\text{Step 1: Identify slope} \quad m = -2$$
+                                    $$\text{Step 2: Use point-slope form with the point } (3, 4)$$
+                                    $$y - 4 = -2(x - 3)$$
+                                    $$y - 4 = -2x + 6$$
+                                    $$y = -2x + 10$$
+                                </p>
+
+                                <h4>Understanding Perpendicular Lines</h4>
+                                <p>
+                                    <strong>Perpendicular lines</strong> intersect at a 90° angle (right angle).
+                                    Think of the corner of a square or the intersection of a cross.
+                                </p>
+
+                                <p><strong>Key Rule:</strong> Perpendicular slopes are <em>negative reciprocals</em></p>
+                                <p class="equation">
+                                    $$L_1 \perp L_2 \text{ if } m_1 \cdot m_2 = -1$$
+                                    $$\text{or equivalently } m_2 = -\frac{1}{m_1}$$
+                                </p>
+
+                                <h4>Finding Negative Reciprocals</h4>
+                                <p>To find the negative reciprocal of a slope:</p>
+                                <ol>
+                                    <li><strong>Flip</strong> the fraction (reciprocal)</li>
+                                    <li><strong>Change</strong> the sign (negative)</li>
+                                </ol>
+
+                                <table style="margin: 16px auto; border-collapse: collapse;">
+                                    <tr style="border-bottom: 2px solid var(--accent);">
+                                        <th style="padding: 8px 16px;">Original Slope</th>
+                                        <th style="padding: 8px 16px;">Perpendicular Slope</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 16px;">\(m = 2\) or \(\frac{2}{1}\)</td>
+                                        <td style="padding: 8px 16px;">\(m_\perp = -\frac{1}{2}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 16px;">\(m = -3\) or \(-\frac{3}{1}\)</td>
+                                        <td style="padding: 8px 16px;">\(m_\perp = \frac{1}{3}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 16px;">\(m = \frac{3}{4}\)</td>
+                                        <td style="padding: 8px 16px;">\(m_\perp = -\frac{4}{3}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 16px;">\(m = -\frac{5}{2}\)</td>
+                                        <td style="padding: 8px 16px;">\(m_\perp = \frac{2}{5}\)</td>
+                                    </tr>
+                                </table>
+
+                                <p><strong>Example 3:</strong> Verify if lines are perpendicular</p>
+                                <ul>
+                                    <li>Line 1: \(y = 4x + 1\) → \(m_1 = 4\)</li>
+                                    <li>Line 2: \(y = -\frac{1}{4}x + 7\) → \(m_2 = -\frac{1}{4}\)</li>
+                                    <li>Check: \(4 \times (-\frac{1}{4}) = -1\) ✅ <strong>Perpendicular!</strong></li>
+                                </ul>
+
+                                <p><strong>Example 4:</strong> Write equation perpendicular to \(y = \frac{2}{3}x - 4\) through \((-6, 5)\)</p>
+                                <p class="equation">
+                                    $$\text{Step 1: Find perpendicular slope} \quad m_\perp = -\frac{3}{2}$$
+                                    $$\text{Step 2: Use point-slope form}$$
+                                    $$y - 5 = -\frac{3}{2}(x - (-6))$$
+                                    $$y - 5 = -\frac{3}{2}(x + 6)$$
+                                    $$y - 5 = -\frac{3}{2}x - 9$$
+                                    $$y = -\frac{3}{2}x - 4$$
+                                </p>
+
+                                <h4>Special Cases</h4>
+                                <p><strong>Horizontal and Vertical Lines:</strong></p>
+                                <ul>
+                                    <li>Horizontal line: \(y = c\) has slope \(m = 0\)</li>
+                                    <li>Vertical line: \(x = c\) has <em>undefined</em> slope</li>
+                                    <li>Horizontal and vertical lines are <strong>always perpendicular</strong> to each other</li>
+                                </ul>
+
+                                <h4>Quick Reference Table</h4>
+                                <table style="margin: 16px auto; border-collapse: collapse; width: 100%;">
+                                    <tr style="background: var(--accent); color: white;">
+                                        <th style="padding: 12px;">Relationship</th>
+                                        <th style="padding: 12px;">Slope Condition</th>
+                                        <th style="padding: 12px;">Example</th>
+                                    </tr>
+                                    <tr style="background: var(--bg-tertiary);">
+                                        <td style="padding: 10px;"><strong>Parallel</strong></td>
+                                        <td style="padding: 10px;">\(m_1 = m_2\)</td>
+                                        <td style="padding: 10px;">\(y = 5x + 2\) and \(y = 5x - 7\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px;"><strong>Perpendicular</strong></td>
+                                        <td style="padding: 10px;">\(m_1 \cdot m_2 = -1\)</td>
+                                        <td style="padding: 10px;">\(y = 5x + 2\) and \(y = -\frac{1}{5}x + 3\)</td>
+                                    </tr>
+                                    <tr style="background: var(--bg-tertiary);">
+                                        <td style="padding: 10px;"><strong>Neither</strong></td>
+                                        <td style="padding: 10px;">Other slopes</td>
+                                        <td style="padding: 10px;">\(y = 2x + 1\) and \(y = 3x - 4\)</td>
+                                    </tr>
+                                </table>
+
+                                <h4>Common Mistakes</h4>
+                                <ul>
+                                    <li>❌ Confusing parallel and perpendicular slope rules</li>
+                                    <li>❌ Forgetting to flip AND change sign for perpendicular slopes</li>
+                                    <li>❌ Thinking parallel lines must have same y-intercept (they must be different!)</li>
+                                    <li>❌ Multiplying slopes instead of checking if product = -1</li>
+                                </ul>
+
+                                <h4>Practice Problems</h4>
+                                <ol>
+                                    <li>Are \(y = -\frac{2}{3}x + 1\) and \(y = \frac{3}{2}x - 5\) parallel, perpendicular, or neither?</li>
+                                    <li>Write the equation parallel to \(2x + 3y = 12\) through point \((0, -4)\)</li>
+                                    <li>Write the equation perpendicular to \(y = 4x - 1\) through point \((8, 2)\)</li>
+                                    <li>Find the perpendicular slope to \(m = -\frac{7}{3}\)</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Linear Inequalities Section -->
+                        <div class="note-section">
+                            <h3 class="section-title">Linear Inequalities</h3>
+                            <div class="note-content">
+                                <h4>What are Linear Inequalities?</h4>
+                                <p>
+                                    A <strong>linear inequality</strong> is like a linear equation, but instead of an equals sign,
+                                    it uses an inequality symbol. Instead of one specific answer, the solution is a range of values.
+                                </p>
+
+                                <h4>Inequality Symbols</h4>
+                                <table style="margin: 16px auto; border-collapse: collapse; width: 100%;">
+                                    <tr style="background: var(--accent); color: white;">
+                                        <th style="padding: 12px;">Symbol</th>
+                                        <th style="padding: 12px;">Meaning</th>
+                                        <th style="padding: 12px;">Example</th>
+                                        <th style="padding: 12px;">In Words</th>
+                                    </tr>
+                                    <tr style="background: var(--bg-tertiary);">
+                                        <td style="padding: 10px; text-align: center;">\(<\)</td>
+                                        <td style="padding: 10px;">Less than</td>
+                                        <td style="padding: 10px;">\(x < 5\)</td>
+                                        <td style="padding: 10px;">x is less than 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center;">\(>\)</td>
+                                        <td style="padding: 10px;">Greater than</td>
+                                        <td style="padding: 10px;">\(x > 5\)</td>
+                                        <td style="padding: 10px;">x is greater than 5</td>
+                                    </tr>
+                                    <tr style="background: var(--bg-tertiary);">
+                                        <td style="padding: 10px; text-align: center;">\(\leq\)</td>
+                                        <td style="padding: 10px;">Less than or equal to</td>
+                                        <td style="padding: 10px;">\(x \leq 5\)</td>
+                                        <td style="padding: 10px;">x is at most 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; text-align: center;">\(\geq\)</td>
+                                        <td style="padding: 10px;">Greater than or equal to</td>
+                                        <td style="padding: 10px;">\(x \geq 5\)</td>
+                                        <td style="padding: 10px;">x is at least 5</td>
+                                    </tr>
+                                </table>
+
+                                <h4>Solving One-Variable Inequalities</h4>
+                                <p>Solve inequalities the same way as equations, with <strong>ONE CRITICAL RULE:</strong></p>
+                                <p style="background: var(--bg-tertiary); padding: 12px; border-left: 4px solid var(--accent); margin: 16px 0;">
+                                    ⚠️ <strong>When multiplying or dividing by a NEGATIVE number, FLIP the inequality sign!</strong>
+                                </p>
+
+                                <p><strong>Example 1:</strong> Solve \(3x - 2 \geq 7\) (no negatives)</p>
+                                <p class="equation">
+                                    $$3x - 2 \geq 7$$
+                                    $$3x \geq 9 \quad \text{(add 2 to both sides)}$$
+                                    $$x \geq 3 \quad \text{(divide by 3, sign stays same)}$$
+                                </p>
+                                <p><strong>Solution:</strong> All numbers greater than or equal to 3</p>
+
+                                <p><strong>Example 2:</strong> Solve \(-2x + 5 > 11\) (dividing by negative!)</p>
+                                <p class="equation">
+                                    $$-2x + 5 > 11$$
+                                    $$-2x > 6 \quad \text{(subtract 5)}$$
+                                    $$x < -3 \quad \text{(divide by -2, FLIP the sign!)}$$
+                                </p>
+                                <p><strong>Solution:</strong> All numbers less than -3</p>
+
+                                <p><strong>Example 3:</strong> Solve \(\frac{x}{4} - 3 \leq 2\)</p>
+                                <p class="equation">
+                                    $$\frac{x}{4} - 3 \leq 2$$
+                                    $$\frac{x}{4} \leq 5 \quad \text{(add 3)}$$
+                                    $$x \leq 20 \quad \text{(multiply by 4)}$$
+                                </p>
+
+                                <h4>Graphing Two-Variable Inequalities</h4>
+                                <p>For inequalities like \(y < 2x + 1\) or \(3x + 4y \geq 12\):</p>
+
+                                <p><strong>Step 1: Graph the Boundary Line</strong></p>
+                                <ul>
+                                    <li>Use <strong>dashed line</strong> for \(<\) or \(>\) (not included)</li>
+                                    <li>Use <strong>solid line</strong> for \(\leq\) or \(\geq\) (included)</li>
+                                    <li>Convert to \(y = mx + b\) or use intercepts</li>
+                                </ul>
+
+                                <p><strong>Step 2: Choose a Test Point</strong></p>
+                                <ul>
+                                    <li>Usually test \((0, 0)\) if it's not on the line</li>
+                                    <li>Substitute into original inequality</li>
+                                    <li>If TRUE → shade the side with the test point</li>
+                                    <li>If FALSE → shade the opposite side</li>
+                                </ul>
+
+                                <p><strong>Example 4:</strong> Graph \(y > 2x - 3\)</p>
+                                <p class="equation">
+                                    $$\text{Step 1: Graph } y = 2x - 3 \text{ with a DASHED line}$$
+                                    $$\text{Step 2: Test } (0, 0): \quad 0 > 2(0) - 3 \rightarrow 0 > -3 \; \checkmark \text{ TRUE}$$
+                                    $$\text{Step 3: Shade the region containing } (0, 0)$$
+                                </p>
+                                <p>The solution is all points <strong>above</strong> the dashed line.</p>
+
+                                <p><strong>Example 5:</strong> Graph \(3x + 2y \leq 6\)</p>
+                                <p class="equation">
+                                    $$\text{Step 1: Find intercepts or solve for y}$$
+                                    $$2y \leq -3x + 6$$
+                                    $$y \leq -\frac{3}{2}x + 3$$
+                                    $$\text{Step 2: Graph with SOLID line (} \leq \text{)}$$
+                                    $$\text{Step 3: Test } (0, 0): \quad 3(0) + 2(0) \leq 6 \rightarrow 0 \leq 6 \; \checkmark$$
+                                    $$\text{Step 4: Shade region with } (0, 0)$$
+                                </p>
+
+                                <h4>Understanding the Shading</h4>
+                                <ul>
+                                    <li><strong>\(y >\) or \(y \geq\):</strong> Shade <strong>above</strong> the line</li>
+                                    <li><strong>\(y <\) or \(y \leq\):</strong> Shade <strong>below</strong> the line</li>
+                                    <li><strong>Dashed line:</strong> Points on the line are NOT solutions</li>
+                                    <li><strong>Solid line:</strong> Points on the line ARE solutions</li>
+                                </ul>
+
+                                <h4>Compound Inequalities</h4>
+                                <p>Combining two inequalities:</p>
+
+                                <p><strong>"And" Compound:</strong> \(x > 2\) AND \(x < 7\) written as \(2 < x < 7\)</p>
+                                <ul>
+                                    <li>Solution must satisfy BOTH conditions</li>
+                                    <li>Solution: \(x\) between 2 and 7</li>
+                                </ul>
+
+                                <p><strong>"Or" Compound:</strong> \(x < -1\) OR \(x > 5\)</p>
+                                <ul>
+                                    <li>Solution satisfies AT LEAST ONE condition</li>
+                                    <li>Solution: \(x\) less than -1 OR greater than 5</li>
+                                </ul>
+
+                                <h4>Real-World Applications</h4>
+                                <p><strong>Example 6:</strong> You have $50 to spend on lunch. Sandwiches cost $8 and drinks cost $3.
+                                Write an inequality for possible combinations.</p>
+                                <p class="equation">
+                                    $$\text{Let } s = \text{sandwiches}, \; d = \text{drinks}$$
+                                    $$8s + 3d \leq 50$$
+                                </p>
+                                <p>Graph this to find all possible combinations you can buy!</p>
+
+                                <h4>Common Mistakes</h4>
+                                <ul>
+                                    <li>❌ <strong>Most Common:</strong> Forgetting to flip sign when dividing/multiplying by negative</li>
+                                    <li>❌ Using solid line for \(<\) or \(>\) (should be dashed)</li>
+                                    <li>❌ Shading the wrong side of the line</li>
+                                    <li>❌ Not testing a point to verify which side to shade</li>
+                                    <li>❌ Treating inequality like an equation with only one solution</li>
+                                </ul>
+
+                                <h4>Quick Reference: Flipping the Sign</h4>
+                                <p style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; margin: 16px 0;">
+                                    <strong>You MUST flip the inequality when:</strong><br>
+                                    ✓ Multiplying both sides by a negative number<br>
+                                    ✓ Dividing both sides by a negative number<br><br>
+                                    <strong>You DON'T flip when:</strong><br>
+                                    ✗ Adding or subtracting anything<br>
+                                    ✗ Multiplying or dividing by a POSITIVE number
+                                </p>
+
+                                <h4>Practice Problems</h4>
+                                <ol>
+                                    <li>Solve: \(-5x + 3 \leq 18\)</li>
+                                    <li>Solve: \(\frac{2x - 1}{3} > 5\)</li>
+                                    <li>Graph: \(y \leq -x + 4\) (solid or dashed line?)</li>
+                                    <li>Solve: \(-3 < 2x + 1 < 9\)</li>
+                                    <li>Write an inequality: A number \(x\) is at most 15 units away from 20</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice Tab -->
+                <div class="tab-content" id="practice">
+                    <h2>Practice Problems</h2>
+                    <div class="practice-container">
+                        <div class="problem-card">
+                            <h3>Problem 1</h3>
+                            <p>Solve for x: \(2x + 5 = 13\)</p>
+                            <input type="text" class="answer-input" placeholder="Your answer...">
+                            <button class="check-btn">Check Answer</button>
+                            <div class="solution" style="display: none;">
+                                <p><strong>Solution:</strong> \(x = 4\)</p>
+                                <p>Steps: \(2x = 8 \rightarrow x = 4\)</p>
+                            </div>
+                        </div>
+
+                        <div class="problem-card">
+                            <h3>Problem 2</h3>
+                            <p>Evaluate: \(\int_0^2 x^2 \, dx\)</p>
+                            <input type="text" class="answer-input" placeholder="Your answer...">
+                            <button class="check-btn">Check Answer</button>
+                            <div class="solution" style="display: none;">
+                                <p><strong>Solution:</strong> \(\frac{8}{3}\)</p>
+                                <p>Steps: \(\left[\frac{x^3}{3}\right]_0^2 = \frac{8}{3}\)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equations Tab -->
+                <div class="tab-content" id="equations">
+                    <h2>Equation Reference</h2>
+                    <div class="equations-container">
+                        <div class="equation-card">
+                            <h3>Quadratic Formula</h3>
+                            <p class="equation">$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</p>
+                        </div>
+
+                        <div class="equation-card">
+                            <h3>Pythagorean Theorem</h3>
+                            <p class="equation">$$a^2 + b^2 = c^2$$</p>
+                        </div>
+
+                        <div class="equation-card">
+                            <h3>Chain Rule</h3>
+                            <p class="equation">$$\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$$</p>
+                        </div>
+
+                        <div class="equation-card">
+                            <h3>Integration by Parts</h3>
+                            <p class="equation">$$\int u \, dv = uv - \int v \, du$$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documents Tab -->
+                <div class="tab-content" id="docs">
+                    <h2>PowerPoint Documents</h2>
+                    <div class="docs-container">
+                        <div class="file-list">
+                            <div class="file-item" onclick="viewDocument('docs/module2/Lesson Point-Slope Form.ppt')">
+                                <span class="file-icon">📄</span>
+                                <span class="file-name">Lesson Point-Slope Form.ppt</span>
+                            </div>
+                            <div class="file-item" onclick="viewDocument('docs/module2/Lesson Standard Form.ppt')">
+                                <span class="file-icon">📄</span>
+                                <span class="file-name">Lesson Standard Form.ppt</span>
+                            </div>
+                            <div class="file-item" onclick="viewDocument('docs/module2/Lesson - Parallel & perpendicular lines.pptx')">
+                                <span class="file-icon">📄</span>
+                                <span class="file-name">Lesson - Parallel & perpendicular lines.pptx</span>
+                            </div>
+                            <div class="file-item" onclick="viewDocument('docs/module2/Lesson - Linear Inequalities.pptx')">
+                                <span class="file-icon">📄</span>
+                                <span class="file-name">Lesson - Linear Inequalities.pptx</span>
+                            </div>
+                        </div>
+                        <div class="doc-viewer" id="docViewer" style="display: none;">
+                            <button class="close-viewer" onclick="closeViewer()">✕ Close</button>
+                            <iframe id="docFrame" width="100%" height="600px"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
